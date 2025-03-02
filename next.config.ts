@@ -27,7 +27,9 @@ const nextConfig: NextConfig = {
     ],
     webVitalsAttribution: ['CLS', 'LCP'],
     webpackMemoryOptimizations: true,
-    turbo: true, // Add this line to enable TurboPack
+    turbo: {
+      // ...
+    },
   },
   async headers() {
     return [
